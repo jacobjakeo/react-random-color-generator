@@ -1,19 +1,22 @@
 import './App.css';
 import randomColor from 'randomcolor';
 import { useState } from 'react';
+import colorwheel from './colorwheel.png';
 
 export default function App() {
-  const color = randomColor();
+  const [currentColor, setCurrentColor] = useState(randomColor());
+  console.log(currentColor);
   return (
     <div className="App">
       <h1>Random Color Generator</h1>
-      <br />
+      <img src={colorwheel} className="App-logo" alt="colorwheel" />
       <div>
-        {color}
+        Current Color: {currentColor}
         <br />
         <button
           onClick={() => {
             const newColor = randomColor();
+            setCurrentColor(newColor);
           }}
         >
           Generate Color

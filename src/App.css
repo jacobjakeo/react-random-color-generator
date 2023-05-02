@@ -8,29 +8,36 @@
   padding: 40px;
   height: 100vh;
   display: flex;
-  flex-direction: column; /* added */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .App > h1 {
-  margin-bottom: 20px; /* added */
-  font-size: 40px; /* increased */
+  margin-bottom: 20px;
+  font-size: 40px;
   text-align: center;
-  font-family: Helvetica, sans-serif;
-  color: whitesmoke;
+  background: -webkit-linear-gradient(#000000, #0049a8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 3;
+  position: absolute;
+  top: 50px;
+  left: 25%;
+  right: 25%;
 }
 
 .App > div {
   background-color: white;
-  padding: 120px 20px;
+  padding: 80px 20px;
   margin: 20px;
   border-radius: 50%;
   width: 250px;
   height: 250px;
   font-size: 30px;
   text-align: center;
-  position: relative; /* added */
+  position: absolute;
+  z-index: 2;
 }
 
 .App > div:before {
@@ -43,10 +50,18 @@
   height: 100px;
   border-radius: 50%;
   background-color: white;
-  z-index: 1;
+  z-index: 2;
 }
 
-.App > div > span {
-  position: relative;
-  z-index: 2;
+.App > div > button {
+  background-color: rgba(148, 187, 233, 1);
+  border: none;
+  border-radius: 10px;
+}
+
+.App > img {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  z-index: 1;
 }
