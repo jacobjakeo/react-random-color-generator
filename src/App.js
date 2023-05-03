@@ -11,7 +11,7 @@ export default function App() {
       <h1 style={{ color: currentColor }}>Random Color Generator</h1>
       <img src={colorwheel} className="App-logo" alt="colorwheel" />
       <div style={{ backgroundColor: currentColor }}>
-        Current Color: {currentColor}
+        Generated Color: {currentColor}
         <br />
         <button
           onClick={() => {
