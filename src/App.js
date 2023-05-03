@@ -5,13 +5,12 @@ import colorwheel from './colorwheel.png';
 
 export default function App() {
   const [currentColor, setCurrentColor] = useState(randomColor());
-  console.log(currentColor);
   return (
     <div className="App" style={{ backgroundColor: currentColor }}>
       <h1 style={{ color: currentColor }}>Random Color Generator</h1>
       <img src={colorwheel} className="App-logo" alt="colorwheel" />
       <div style={{ backgroundColor: currentColor }}>
-        Generated Color: {currentColor}
+        Generated Color: {currentColor} <br />
         <br />
         <button
           onClick={() => {
