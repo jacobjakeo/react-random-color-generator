@@ -19,7 +19,7 @@ export default function App() {
             setCurrentColor(newColor);
           }}
         >
-          Generate Color
+          Generate
         </button>
       </div>
     </div>
