@@ -7,10 +7,10 @@ export default function App() {
   const [currentColor, setCurrentColor] = useState(randomColor());
   console.log(currentColor);
   return (
-    <div className="App">
-      <h1>Random Color Generator</h1>
+    <div className="App" style={{ backgroundColor: currentColor }}>
+      <h1 style={{ color: currentColor }}>Random Color Generator</h1>
       <img src={colorwheel} className="App-logo" alt="colorwheel" />
-      <div>
+      <div style={{ backgroundColor: currentColor }}>
         Current Color: {currentColor}
         <br />
         <button
