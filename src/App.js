@@ -12,8 +12,7 @@ export default function App() {
       <img src={colorwheel} className="App-logo" alt="colorwheel" />
       <div style={{ backgroundColor: currentColor }}>
         Generated Color: {currentColor}
-      </div>
-      <div>
+        <br />
         <button
           onClick={() => {
             const newColor = randomColor();
